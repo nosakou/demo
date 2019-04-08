@@ -2,7 +2,7 @@
 Documentation    On Boarding
 Variables    test_variables.py
 Resource  resource.robot
-Test Setup  Open Application  ${SERVER}
+Test Setup  Open Application  ${APPIUM_HOST}
                    ...   deviceName=${DEVICE_NAME}
                    ...   app=${APP}
                    ...   platformName=${PLATFORM_NAME}
