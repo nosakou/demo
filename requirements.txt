@@ -1,0 +1,7 @@
+pytest
+appium-python-client
+behave
+robotframework
+robotframework-appiumlibrary
+six
+selenium
