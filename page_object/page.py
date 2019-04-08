@@ -32,7 +32,7 @@ class BasePage(object):
             assert text in self.driver.find_element(*element).text
             return self.driver.find_element(*element)
         except AssertionError as error:
-            error.args += ('Element is not displayed')
+            error.args += ('Element doesn\'t have relevant text')
             raise
 
 
