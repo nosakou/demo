@@ -1,5 +1,5 @@
 from appium import webdriver
-from .helpers.config import *
+from helpers.config import *
 
 
 def before_all(context):
