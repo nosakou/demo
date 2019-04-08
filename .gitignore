@@ -5,3 +5,4 @@ __pycache__/
 log.html
 output.xml
 report.html
+.pytest_cache/
