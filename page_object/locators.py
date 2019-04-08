@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from .config import BUNDLE_NAME
+from config import BUNDLE_NAME
 
 
 class MainPageLocators(object):

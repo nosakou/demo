@@ -1,6 +1,6 @@
 from appium import webdriver
-from .page import MainPage
-from .config import DESIRED_CAPS, APPIUM_HOST
+from page import MainPage
+from config import DESIRED_CAPS, APPIUM_HOST
 
 
 class TestUM:
