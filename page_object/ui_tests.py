@@ -22,3 +22,4 @@ class TestUM:
             main_page.do_swipe()
             main_page.assert_element_displayed(main_page.locators.ONBOARDING_PAGE)
             main_page.assert_element_has_text(main_page.locators.ONBOARDING_PAGE, text)
+        main_page.assert_element_displayed(main_page.locators.BEGIN_BUTTON)
