@@ -2,7 +2,9 @@
 
 ## Installation
 `virtualenv env --pyrhon=python3.7`
+
 `source env/bin/activate`
+
 `pip install -r requirements.txt`
 
 ## Page Object tests start
@@ -10,6 +12,7 @@
 
 ## Behave tests start
 `behave @behave_test/test.featureset`
+
 `behave behave_test/features/onboarding.feature`
 
 ## Robot tests start
