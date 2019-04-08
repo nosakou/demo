@@ -5,4 +5,4 @@ Feature: Showing off on-boarding
     # Enter steps here
     Given activity started normally
     Then user swipes on-boarding
-    Then user sees finish button
+    Then user sees begin button

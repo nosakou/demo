@@ -29,7 +29,7 @@ def step_impl(context):
         assert_element_has_text(context, ONBOARD_TITLE, text=text)
 
 
-@then("user sees finish button")
+@then("user sees begin button")
 def step_impl(context):
     """
     :type context: behave.runner.Context
