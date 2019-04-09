@@ -9,3 +9,5 @@ report.html
 *.apk
 behave_test/features/helpers/config.py
 page_object/config.py
+.DS_Store
+*.app/
