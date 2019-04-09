@@ -1,12 +1,19 @@
-from locators import MainPageLocators
+from locators import MainPageLocatorsAndroid, MainPageLocatorsIOS
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage(object):
 
-    def __init__(self, driver):
+    locators = None
+
+    def __init__(self, driver, platform):
         self.driver = driver
+        self.platform = platform
+        if platform == 'android':
+            self.locators = MainPageLocatorsAndroid()
+        else:
+            self.locators = MainPageLocatorsIOS()
 
     def do_swipe(self):
         size = self.driver.get_window_size()
@@ -41,10 +48,8 @@ class BasePage(object):
 
 class MainPage(BasePage):
 
-    locators = MainPageLocators()
-
     def click_finish(self):
         element = self.driver.find_element(
-            *self.locators.BEGIN_BUTTON
+                *self.locators.BEGIN_BUTTON
         )
         element.click()
