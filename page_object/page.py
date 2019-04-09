@@ -20,8 +20,10 @@ class BasePage(object):
                 EC.presence_of_element_located(element)
             )
             assert self.driver.find_element(*element).is_displayed() is True
+            return self.driver.find_element(*element)
+
         except AssertionError as error:
-            error.args += ('Element is not displayed')
+            error.args += ('Element is not displayed',)
             raise
 
     def assert_element_has_text(self, element, text=None):
@@ -31,8 +33,9 @@ class BasePage(object):
             )
             assert text in self.driver.find_element(*element).text
             return self.driver.find_element(*element)
+
         except AssertionError as error:
-            error.args += ('Element doesn\'t have relevant text')
+            error.args += ('Element doesn\'t have relevant text',)
             raise
 
 

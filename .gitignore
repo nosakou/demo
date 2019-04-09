@@ -7,3 +7,5 @@ output.xml
 report.html
 .pytest_cache/
 *.apk
+behave_test/features/helpers/config.py
+page_object/config.py

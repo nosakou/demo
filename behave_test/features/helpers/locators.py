@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from config import BUNDLE_NAME
+from behave_test.features.helpers.config import BUNDLE_NAME
 
 
 # группа локаторов онбординга

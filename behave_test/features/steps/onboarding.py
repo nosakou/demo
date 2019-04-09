@@ -1,6 +1,6 @@
 from behave import *
-from behave_test.features.helpers.locators import *
 from behave_test.features.helpers.utils import *
+from behave_test.features.helpers.locators import *
 
 use_step_matcher("re")
 
@@ -20,13 +20,14 @@ def step_impl(context):
     :type context: behave.runner.Context
     """
     texts = [
-        'Регистрируйтесь куда угодно',
-        'Печатайте постеры как угодно',
-        'Делитесь чем угодно'
+        'Покупайте авиабилеты быстрее, чем за 2 минуты',
+        'Регистрируйтесь на рейс меньше, чем за 49 секунд',
+        'Печатайте посадочные билеты с помощью терминалов в аэропорту',
+        'Следите за бонусным балансом'
     ]
     for text in texts:
-        do_swipe(context)
         assert_element_has_text(context, ONBOARD_TITLE, text=text)
+        do_swipe(context)
 
 
 @then("user sees begin button")
