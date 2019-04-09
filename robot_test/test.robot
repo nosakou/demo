@@ -12,9 +12,10 @@ Test Teardown  Close Application
 
 *** Keywords ***
 Be sure you see the begin button
-    Element Should Be Visible    id=${ONBOARDING_PAGE}
+    Wait Until Element Is Visible    id=${ONBOARDING_PAGE}
     :FOR  ${TEXT}  IN  @{ONBOARD_TEXTS}
     \    Element Should Contain Text   id=${ONBOARDING_PAGE}   ${TEXT}
+    \    Do Swipe
     Wait Until Element Is Visible    id=${BEGIN_BUTTON}
     Click Element    id=${BEGIN_BUTTON}
 
