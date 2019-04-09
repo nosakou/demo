@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    On Boarding
-Variables    test_variables.py
+Variables    config.py
 Resource  resource.robot
 Test Setup  Open Application  ${APPIUM_HOST}
                    ...   deviceName=${DEVICE_NAME}
